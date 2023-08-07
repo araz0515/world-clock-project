@@ -27,7 +27,10 @@ footer {
   margin: 10px;
   font-size: 15px;
 }
-
+.heading-link {
+  color: black;
+  text-decoration: none;
+}
 .time {
   font-weight: 600;
   font-size: 35px;
