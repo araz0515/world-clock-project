@@ -1,4 +1,5 @@
 function setDate() {
+  //Los Angeles
   let losAngelesDateElement = document.querySelector("#los-angeles .date");
   losAngelesDateElement.innerHTML = moment()
     .tz("America/Los_Angeles")
@@ -9,6 +10,7 @@ function setDate() {
     .tz("America/Los_Angeles")
     .format("h:mm:ss [<small>]A [</small>]");
 
+  //Toronto
   let torontoDateElement = document.querySelector("#toronto .date");
   torontoDateElement.innerHTML = moment()
     .tz("America/Toronto")
@@ -19,6 +21,7 @@ function setDate() {
     .tz("America/Toronto")
     .format("h:mm:ss [<small>]A[</small>]");
 
+  //Paris
   let parisDateElement = document.querySelector("#paris .date");
   parisDateElement.innerHTML = moment()
     .tz("Europe/Paris")
@@ -29,5 +32,5 @@ function setDate() {
     .tz("Europe/Paris")
     .format("h:mm:ss [<small>]A [</small>]");
 }
-
+setDate();
 setInterval(setDate, 1000);
