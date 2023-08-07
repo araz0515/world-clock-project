@@ -57,6 +57,3 @@ function updateCity(event) {
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
-
-updateCity();
-setInterval(updateCity, 1000);
